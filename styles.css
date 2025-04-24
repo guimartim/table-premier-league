@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Underdog&display=swap');
+
+h1, h2 {                                   /* Estiliza os títulos principais */
+    text-align: center;                    /* Centraliza os textos */
+    font-family: "Roboto", sans-serif;     /* Define a fonte como Roboto */
+}
+
+p {                                    /* Estiliza os parágrafos usados nas células da tabela */
+    margin: 0;                         /* Remove margens padrão */
+    vertical-align: middle;            /* Alinha verticalmente com a imagem */
+    display: inline-block;             /* Permite que o parágrafo fique ao lado de outros elementos */
+}
+
+table {                                /* Estiliza a tabela principal */
+    border-collapse: collapse;         /* Junta as bordas das células */
+    margin: auto;                      /* Centraliza a tabela horizontalmente */
+    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto na tabela */
+}
+
+th, td {                             /* Estiliza todas as células da tabela */
+    padding: 8px;                    /* Espaçamento interno das células */
+    text-align: center;              /* Centraliza o conteúdo horizontalmente */
+    vertical-align: middle;          /* Alinha o conteúdo verticalmente ao meio */
+    margin: auto 0;                  /* (Sem efeito visual em td/th, mas não atrapalha) */
+}
+
+th:first-child, td:first-child {     /* Estiliza a primeira coluna da tabela */
+    padding: 8px;                    /* Mesmo espaçamento interno */
+    text-align: left;                /* Alinha o conteúdo à esquerda (ex: nome dos clubes) */
+    vertical-align: middle;          /* Alinha verticalmente */
+    margin: auto 0;                  /* (Sem efeito relevante aqui) */
+}
+
+td:first-child {                     /* Estiliza especificamente a primeira célula de cada linha */
+    display: flex;                   /* Torna a célula um contêiner flexível */
+    align-items: center;             /* Centraliza verticalmente os itens internos */
+    gap: 6px;                        /* Espaçamento entre o número, escudo e nome do clube */
+}
+
+img {                                /* Estiliza os escudos dos clubes */
+    width: 25px;                     /* Define a largura da imagem */
+    height: 25px;                    /* Define a altura da imagem */
+    border-radius: 50%;              /* Deixa o escudo com formato circular */
+}
+
+th {                                  /* Estiliza os cabeçalhos da tabela */
+    background-color: #e6e6e6;      /* Cor de fundo cinza claro */
+    font-weight: bold;                /* Deixa o texto em negrito */
+    font-size: 14px;                  /* Define o tamanho da fonte */
+}
+
+.premier-league tr:nth-child(even) {      /* Estiliza linhas pares da tabela */
+    background-color: #f9f9f9;          /* Aplica cor de fundo clara (efeito zebrado) */
+}
+
+.logo {
+    width: 50px;
+    height: 100%;
+}
+
+.title-page {                          /* Seleciona o elemento com a classe 'title-page' */
+    display: flex;                     /* Define o layout como Flexbox */
+    justify-content: center;           /* Centraliza os itens horizontalmente (no eixo X) */
+    align-items: center;               /* Centraliza os itens verticalmente (no eixo Y) */
+}
+
+.number {                            /* Estiliza os números de colocação dos clubes */
+    width: 20px;                     /* Largura fixa */
+    min-width: 20px;                 /* Garante que não encolha mais que isso */
+    font-weight: bold;               /* Deixa o número em negrito */
+    text-align: center;              /* Centraliza o número dentro do espaço */
+}
