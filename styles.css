@@ -1,113 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Underdog&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Underdog&display=swap");
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-h1, h2 {                                   /* Estiliza os títulos principais */
-    text-align: center;                    /* Centraliza os textos */
-    font-family: "Roboto", sans-serif;     /* Define a fonte como Roboto */
-    margin: 0;
+h1,
+h2 {
+  /* Estiliza os títulos principais */
+  text-align: center; /* Centraliza os textos */
+  font-family: "Roboto", sans-serif; /* Define a fonte como Roboto */
+  margin: 0;
 }
 
 h2 {
-    margin-bottom: 8px;
-    font-size: 1.125rem;
+  margin-bottom: 8px;
+  font-size: 1.125rem;
 }
 
-p {                                    /* Estiliza os parágrafos usados nas células da tabela */
-    margin: 0;                         /* Remove margens padrão */
-    vertical-align: middle;            /* Alinha verticalmente com a imagem */
-    display: inline-block;             /* Permite que o parágrafo fique ao lado de outros elementos */
+h4 {
+  margin: 0 0 4px 0;
+  font-family: "roboto", sans-serif;
 }
 
-table {                                /* Estiliza a tabela principal */
-    border-collapse: collapse;         /* Junta as bordas das células */
-    display: flex;
-    justify-content: center;                      /* Centraliza a tabela horizontalmente */
-    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto na tabela */
-    font-size: 1rem;
-    white-space: nowrap;               /* impede quebra de linha nas células */
+p {
+  /* Estiliza os parágrafos usados nas células da tabela */
+  margin: 0; /* Remove margens padrão */
+  vertical-align: middle; /* Alinha verticalmente com a imagem */
+  display: inline-block; /* Permite que o parágrafo fique ao lado de outros elementos */
 }
 
-th, td {                             /* Estiliza todas as células da tabela */
-    padding: 8px;                    /* Espaçamento interno das células */
-    text-align: center;              /* Centraliza o conteúdo horizontalmente */
-    vertical-align: middle;          /* Alinha o conteúdo verticalmente ao meio */
-    margin: auto 0;                  /* (Sem efeito visual em td/th, mas não atrapalha) */
-    font-size: 1rem;
+table {
+  /* Estiliza a tabela principal */
+  border-collapse: collapse; /* Junta as bordas das células */
+  display: flex;
+  justify-content: center; /* Centraliza a tabela horizontalmente */
+  font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto na tabela */
+  font-size: 1rem;
+  white-space: nowrap; /* impede quebra de linha nas células */
+}
+
+th,
+td {
+  /* Estiliza todas as células da tabela */
+  padding: 8px; /* Espaçamento interno das células */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  vertical-align: middle; /* Alinha o conteúdo verticalmente ao meio */
+  margin: auto 0; /* (Sem efeito visual em td/th, mas não atrapalha) */
+  font-size: 1rem;
+}
+
+tr {
+  position: relative;
 }
 
 td {
-    height: 42px;
-    box-sizing: border-box;
+  height: 42px;
+  box-sizing: border-box;
 }
 
-th:first-child, td:first-child {     /* Estiliza a primeira coluna da tabela */
-    padding: 8px;                    /* Mesmo espaçamento interno */
-    text-align: left;                /* Alinha o conteúdo à esquerda (ex: nome dos clubes) */
-    vertical-align: middle;          /* Alinha verticalmente */
-    margin: auto 0;                  /* (Sem efeito relevante aqui) */
-    position: sticky;
-    left: 0;
-    z-index: 1;
+th:first-child,
+td:first-child {
+  /* Estiliza a primeira coluna da tabela */
+  padding: 8px 8px 8px 0; /* Mesmo espaçamento interno */
+  text-align: left; /* Alinha o conteúdo à esquerda (ex: nome dos clubes) */
+  vertical-align: middle; /* Alinha verticalmente */
+  margin: auto 0; /* (Sem efeito relevante aqui) */
+  position: sticky;
+  left: 0;
+  z-index: 1;
 }
 
 tr:nth-child(odd) td {
-    background-color: white;
+  background-color: white;
 }
 
 tr:nth-child(even) td {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
-td:first-child {                     /* Estiliza especificamente a primeira célula de cada linha */
-    display: flex;                   /* Torna a célula um contêiner flexível */
-    align-items: center;             /* Centraliza verticalmente os itens internos */
-    gap: 6px;                        /* Espaçamento entre o número, escudo e nome do clube */
-    width: 100%;
+td:first-child {
+  /* Estiliza especificamente a primeira célula de cada linha */
+  display: flex; /* Torna a célula um contêiner flexível */
+  align-items: center; /* Centraliza verticalmente os itens internos */
+  gap: 6px; /* Espaçamento entre o número, escudo e nome do clube */
+  width: 100%;
 }
 
-img {                                /* Estiliza os escudos dos clubes */
-    width: 25px;                     /* Define a largura da imagem */
-    height: 25px;                    /* Define a altura da imagem */
-    border-radius: 50%;              /* Deixa o escudo com formato circular */
+img {
+  /* Estiliza os escudos dos clubes */
+  width: 25px; /* Define a largura da imagem */
+  height: 25px; /* Define a altura da imagem */
+  border-radius: 50%; /* Deixa o escudo com formato circular */
 }
 
-th {                                  /* Estiliza os cabeçalhos da tabela */
-    background-color: #e6e6e6 !important;      /* Cor de fundo cinza claro */
-    font-weight: bold;                /* Deixa o texto em negrito */
+th {
+  /* Estiliza os cabeçalhos da tabela */
+  background-color: #e6e6e6 !important; /* Cor de fundo cinza claro */
+  font-weight: bold; /* Deixa o texto em negrito */
+  padding-left: 8px;
+}
+
+th:first-child {
+  padding-left: 12px;
 }
 
 .logo {
-    width: 50px;
-    height: 100%;
+  width: 50px;
+  height: 100%;
 }
 
-.title-page {                          /* Seleciona o elemento com a classe 'title-page' */
-    display: flex;                     /* Define o layout como Flexbox */
-    justify-content: center;           /* Centraliza os itens horizontalmente (no eixo X) */
-    align-items: center;               /* Centraliza os itens verticalmente (no eixo Y) */
-    font-size: 1.5rem;
+.title-page {
+  /* Seleciona o elemento com a classe 'title-page' */
+  display: flex; /* Define o layout como Flexbox */
+  justify-content: center; /* Centraliza os itens horizontalmente (no eixo X) */
+  align-items: center; /* Centraliza os itens verticalmente (no eixo Y) */
+  font-size: 1.5rem;
 }
 
-.number {                            /* Estiliza os números de colocação dos clubes */
-    width: 20px;                     /* Largura fixa */
-    min-width: 20px;                 /* Garante que não encolha mais que isso */
-    font-weight: bold;               /* Deixa o número em negrito */
-    text-align: center;              /* Centraliza o número dentro do espaço */
+.number {
+  /* Estiliza os números de colocação dos clubes */
+  width: 20px; /* Largura fixa */
+  min-width: 20px; /* Garante que não encolha mais que isso */
+  font-weight: bold; /* Deixa o número em negrito */
+  text-align: center; /* Centraliza o número dentro do espaço */
+  margin-left: 8px;
 }
 
 .container {
-    padding: 16px 0;
-    width: 100%;
-    box-sizing: border-box;
+  padding: 16px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tabela-scroll {
-    margin: auto;
+  margin: auto;
 }
 
 .premier-league {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+.legenda {
+  list-style: none;
+  width: fit-content;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+.quadrado-legenda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quadrado-legenda::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: flex;
+}
+
+.champions-legenda::before {
+  background-color: rgb(0, 0, 255);
+}
+
+.europa-legenda::before {
+  background-color: orange;
+}
+
+.europa-qualificacao-legenda::before {
+  background-color: rgba(255, 166, 0, 0.616);
+}
+
+.championship-legenda::before {
+  background-color: red;
+}
+
+.legenda li {
+  gap: 8px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sessao-legenda {
+  display: flex;
+  justify-content: left;
+  padding-left: 2rem;
+}
+
+.champions-marking::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 2px);
+  width: 4px;
+  background-color: rgb(0, 0, 255);
+  z-index: 10;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.europa-marking::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 2px);
+  width: 4px;
+  background-color: orange;
+  z-index: 10;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.repescagem-europa-marking::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 2px);
+  width: 4px;
+  background-color: rgba(255, 166, 0, 0.616);
+  z-index: 10;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.championship-marking::before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 2px);
+  width: 4px;
+  background-color: red;
+  z-index: 10;
+  transform: translateY(-50%);
+  top: 50%;
 }

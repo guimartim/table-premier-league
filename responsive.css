@@ -1,40 +1,50 @@
-@media screen and (max-width: 546px) { /* Aplica os estilos quando a largura da tela for até 546px */
-    .container {
-        padding: 16px 0; /* Reduz o padding horizontal para economizar espaço */
-    }
+@media screen and (max-width: 546px) {
+  /* Aplica os estilos quando a largura da tela for até 546px */
+  .container {
+    padding: 16px 0; /* Reduz o padding horizontal para economizar espaço */
+  }
 
-    .premier-league {
-        width: max-content;   /* Faz com que a tabela tenha largura mínima suficiente para o conteúdo */
-        table-layout: fixed;  /* Garante que a largura das colunas seja fixa e não se ajuste ao conteúdo */
-    }
+  .premier-league {
+    width: max-content; /* Faz com que a tabela tenha largura mínima suficiente para o conteúdo */
+    table-layout: fixed; /* Garante que a largura das colunas seja fixa e não se ajuste ao conteúdo */
+  }
 
-    th:first-child, td:first-child {
-        flex: 1; /* Faz a primeira célula ocupar o espaço restante dentro do layout flexível */
-    }
+  th:first-child,
+  td:first-child {
+    flex: 1; /* Faz a primeira célula ocupar o espaço restante dentro do layout flexível */
+  }
 }
 
-@media screen and (max-width: 454px) { /* Aplica os estilos para telas com até 454px */
-    .tabela-scroll {
-        overflow-x: auto;
-        max-width: 100%;
-    }
-    .title-page {
-        text-align: center; /* Centraliza o texto do título */
-    }
+@media screen and (max-width: 454px) {
+  /* Aplica os estilos para telas com até 454px */
+  .tabela-scroll {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .title-page {
+    text-align: center; /* Centraliza o texto do título */
+  }
 
-    html {
-        font-size: 75%; /* Diminui o tamanho base da fonte da página (efeito cascata) */
-    }
+  html {
+    font-size: 75%; /* Diminui o tamanho base da fonte da página (efeito cascata) */
+  }
 }
 
-@media screen and (max-width: 376px) { /* Estilos para telas extremamente pequenas */
-    .title-page img {
-        display: none; /* Oculta o logo para economizar espaço */
-    }
+@media screen and (max-width: 376px) {
+  /* Estilos para telas extremamente pequenas */
+  .title-page img {
+    display: none; /* Oculta o logo para economizar espaço */
+  }
+
+  .sessao-legenda {
+    padding: 0;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 262px) { /* Estilos para telas extremamente pequenas */
-    .premier-league img {
-        display: none; /* Oculta os escudos dos clubes para economizar espaço */
-    }
+@media screen and (max-width: 262px) {
+  /* Estilos para telas extremamente pequenas */
+  .premier-league img {
+    display: none; /* Oculta os escudos dos clubes para economizar espaço */
+  }
 }

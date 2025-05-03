@@ -15,6 +15,16 @@
   <li>Escudos dos times exibidos ao lado do nome</li>
   <li>Colunas com dados de pontos, vitórias, empates, derrotas, saldo de gols, etc.</li>
   <li>Primeira coluna fixa ao rolar horizontalmente (usando <code>position: sticky</code>)</li>
+  <li>Legenda visual indicando os clubes classificados para competições europeias e rebaixamento</li>
+</ul>
+
+<h2>🔍 Legenda de Classificação</h2>
+<p>A tabela inclui uma legenda que destaca, por meio de cores diferentes, os clubes de acordo com sua classificação final:</p>
+<ul>
+  <li><span style="color: rgb(0, 0, 255); font-weight:bold;">🔵 Champions League:</span> 1º ao 4º lugar</li>
+  <li><span style="color: orange; font-weight:bold;">🟠 Europa League:</span> 5º e 6º lugares</li>
+  <li><span style="color:rgba(255, 166, 0, 0.616); font-weight:bold;">🟡 Repescagem Europa League:</span> 7º lugar</li>
+  <li><span style="color: red; font-weight:bold;">🔴 EFL Championship:</span> 18º ao 20º lugar (rebaixados)</li>
 </ul>
 
 <h2>🛠️ Tecnologias utilizadas</h2>
